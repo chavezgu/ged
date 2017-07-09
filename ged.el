@@ -4,6 +4,8 @@
 
 ;;; Inspiration and some of the original code at:
 ;;; https://writequit.org/eos/eos.html
+
+;;; Show any errors at startup
 (setq debug-on-error t)
 (setq debug-on-quit t)
 
@@ -58,5 +60,6 @@
 (try-load 'ged-dev-python)
 
 
+;;; No errors so reset these variables
 (setq debug-on-error nil)
 (setq debug-on-quit nil)
