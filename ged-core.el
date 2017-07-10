@@ -146,4 +146,7 @@
 ;; Because I'm old, I need to highlight the line where my cursor is.
 (global-hl-line-mode 1)
 
+;;; Use the pass password manager
+(use-package pass)
+
 (provide 'ged-core)
