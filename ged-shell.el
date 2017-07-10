@@ -20,8 +20,6 @@
 ;;; We use mainly shell. No reason to learn another shell than bash.
 (setq explicit-shell-file-name "/bin/bash")
 (setq shell-file-name "/bin/bash")
-;;; Load the aliases too with -i
-(setq shell-command-switch "-ic")       
 (setenv "SHELL" shell-file-name)
 ;;; less does not like Emacs so we don't like less
 (setenv "PAGER" "pager")
