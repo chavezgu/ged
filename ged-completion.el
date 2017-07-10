@@ -12,6 +12,8 @@
     "Try to do case-sensitive matching (not effective with all functions)."
     (let ((case-fold-search nil))
       ad-do-it))
+  :bind
+  (("M-/" . hippie-expand))
   :config
   ;; Steal all this from EOS
   (setq hippie-expand-try-functions-list
