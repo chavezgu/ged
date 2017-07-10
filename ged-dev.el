@@ -43,4 +43,9 @@
 (use-package yaml-mode
   :ensure t)
 
+;;; Docker is the new hot stuff in town.
+(use-package docker
+  :init
+  (setq docker-containers-show-all nil))
+
 (provide 'ged-dev)
