@@ -51,6 +51,7 @@
 ;;; Loading modules
 (try-load 'ged-core)
 (try-load 'ged-look)
+(try-load 'ged-dired)
 (try-load 'ged-helm)
 (try-load 'ged-completion)
 (try-load 'ged-org)
