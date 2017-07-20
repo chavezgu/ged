@@ -12,6 +12,16 @@
 (prefer-coding-system 'utf-8)
 (setq default-process-coding-system '(utf-8-unix . utf-8-unix))
 
+;;; Stolen from EOS. No need to garbage collect as frequently
+(setq gc-cons-threshold (* 50 1024 1024)) ;; 50 mb
+;; Allow font-lock-mode to do background parsing
+(setq jit-lock-defer-time nil
+      ;; jit-lock-stealth-nice 0.1
+      jit-lock-stealth-time 1
+      jit-lock-stealth-verbose nil)
+
+(setq idle-update-delay 2)
+
 ;; Better defaults
 (setq x-select-enable-clipboard t
       x-select-enable-primary t
