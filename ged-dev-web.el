@@ -12,4 +12,9 @@
   :ensure t
   :mode "\\.json\\'")
 
+(use-package web-mode
+  :ensure t
+  :config
+  (setq web-mode-code-indent-offset 2))
+
 (provide 'ged-dev-web)
