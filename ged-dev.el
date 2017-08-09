@@ -48,4 +48,9 @@
   :init
   (setq docker-containers-show-all nil))
 
+;;; Use flycheck
+(use-package flycheck
+  :ensure t
+  :init (global-flycheck-mode))
+
 (provide 'ged-dev)
