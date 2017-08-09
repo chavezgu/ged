@@ -59,6 +59,7 @@
 (try-load 'ged-dev)
 (try-load 'ged-dev-c)
 (try-load 'ged-dev-python)
+(try-load 'ged-dev-web)
 
 
 ;;; No errors so reset these variables
