@@ -19,14 +19,6 @@
 ;;; Show matching parenthesis
 (show-paren-mode t)
 
-;; Emacs is the best platform for editing elisp, duh, so it goes directly here
-(use-package paredit
-  :ensure t
-  :diminish paredit-mode
-  :init
-  (add-hook 'emacs-lisp-mode-hook 'paredit-mode)
-  (add-hook 'ielm-mode-hook 'paredit-mode))
-
 ;;; Snippets
 (use-package yasnippet
   :ensure t
