@@ -51,6 +51,10 @@
 ;;; Use flycheck
 (use-package flycheck
   :ensure t
-  :init (global-flycheck-mode))
+  :init (global-flycheck-mode)
+  :config
+  (progn
+    (setq-default flycheck-disabled-checkers
+                  '(emacs-lisp-checkdoc json-jsonlint json-python-json))))
 
 (provide 'ged-dev)
