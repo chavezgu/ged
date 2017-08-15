@@ -156,6 +156,11 @@
      (concat "/sudo:root@localhost:"
              buffer-file-name))))
 
+(use-package tramp-sh
+  :config
+  ;;; Get the same path in tramp mode
+  (add-to-list 'tramp-remote-path 'tramp-own-remote-path))
+
 ;; We don't need to send email if we are not inside gnus.
 (global-set-key (kbd "C-x m") nil)
 
