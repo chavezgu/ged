@@ -8,6 +8,9 @@
   :mode "\\.js\\'"
   :config (js2-imenu-extras-setup))
 
+(use-package js-comint
+  :ensure t)
+
 (use-package json-mode
   :ensure t
   :mode "\\.json\\'")
