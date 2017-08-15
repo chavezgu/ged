@@ -164,6 +164,11 @@
 ;; Because I'm old, I need to highlight the line where my cursor is.
 (global-hl-line-mode 1)
 
+;;; Add custom lisp of machines
+(when (file-exists-p "~/.emacs.d/site-lisp")
+  (add-to-list 'load-path "~/.emacs.d/site-lisp"))
+
+
 ;;; Use password manager
 (use-package pass
   :ensure t)
