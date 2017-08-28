@@ -37,6 +37,7 @@
 
 ;;; Docker is the new hot stuff in town.
 (use-package docker
+  :ensure t
   :init
   (setq docker-containers-show-all nil))
 
