@@ -49,4 +49,9 @@
     (setq-default flycheck-disabled-checkers
                   '(emacs-lisp-checkdoc json-jsonlint json-python-json))))
 
+;;; Disable M-o under diff
+(add-hook 'diff-mode-hook
+          #'(lambda ()
+              (define-key diff-mode-map "\M-o" nil)))
+
 (provide 'ged-dev)
