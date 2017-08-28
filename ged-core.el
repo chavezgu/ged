@@ -173,6 +173,10 @@
 (when (file-exists-p "~/.emacs.d/site-lisp")
   (add-to-list 'load-path "~/.emacs.d/site-lisp"))
 
+;;; Disable M-o functionality on ibuffer
+(add-hook 'ibuffer-mode-hook
+          #'(lambda ()
+              (define-key ibuffer-mode-map "\M-o" nil)))
 
 ;;; Use password manager
 (use-package pass
