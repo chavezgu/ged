@@ -8,6 +8,12 @@
   (add-hook 'emacs-lisp-mode-hook 'paredit-mode)
   (add-hook 'ielm-mode-hook 'paredit-mode))
 
+(use-package elisp-slime-nav
+  :ensure t
+  :config
+  (dolist (hook '(emacs-lisp-mode-hook ielm-mode-hook))
+    (add-hook hook 'elisp-slime-nav-mode)))
+
 
 ;;; Scheme settings
 (setq geiser-active-implementations '(guile))
