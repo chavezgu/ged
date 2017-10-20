@@ -93,8 +93,8 @@
   (setq uniquify-buffer-name-style 'post-forward-angle-brackets))
 
 ;; We follow Steve Yegge advice
-(global-set-key "\C-x\C-m" 'helm-M-x)
-(global-set-key "\C-c\C-m" 'helm-M-x)
+(global-set-key "\C-x\C-m" 'counsel-M-x)
+(global-set-key "\C-c\C-m" 'counsel-M-x)
 
 ;; No more backspace
 (global-set-key "\C-w" 'backward-kill-word)
