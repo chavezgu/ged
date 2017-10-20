@@ -9,11 +9,8 @@
   (setq fci-rule-color "darkred")
   (add-hook 'after-change-major-mode-hook 'fci-mode))
 
-;;; Monokai is the best theme
-(use-package monokai-theme
-  :ensure t
-  :config
-  (load-theme 'monokai t))
+;;; tango-dark is nice on the eyes
+(load-theme 'tango-dark)
 
 ;;; No startup screen
 (setq-default inhibit-startup-screen t)
