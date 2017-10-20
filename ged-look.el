@@ -1,14 +1,5 @@
 ;;; Look and feel and window management
 
-;;; Show the where the columns ends
-(use-package fill-column-indicator
-  :ensure t
-  :init
-  (setq fci-rule-column 80)
-  (setq fci-rule-width  2)
-  (setq fci-rule-color "darkred")
-  (add-hook 'after-change-major-mode-hook 'fci-mode))
-
 ;;; tango-dark is nice on the eyes
 (load-theme 'tango-dark)
 
