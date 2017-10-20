@@ -1,6 +1,6 @@
 ;;; Look and feel and window management
 
-;;; tango-dark is nice on the eyes
+;; ;;; tango-dark is nice on the eyes
 (load-theme 'tango-dark)
 
 ;;; No startup screen
