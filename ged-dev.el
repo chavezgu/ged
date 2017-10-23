@@ -58,4 +58,8 @@
           #'(lambda ()
               (define-key diff-mode-map "\M-o" nil)))
 
+(use-package projectile
+  :ensure t
+  :diminish projectile-mode)
+
 (provide 'ged-dev)
