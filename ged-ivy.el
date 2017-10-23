@@ -1,9 +1,5 @@
 ;; Mode for ivy-mode
 
-;; For fuzzy matching
-(use-package flx-ido
-  :ensure t)
-
 (use-package counsel
  :ensure t)
 
@@ -29,6 +25,5 @@
   (global-set-key (kbd "C-x l") 'counsel-locate)
   (global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
   (define-key read-expression-map (kbd "C-r") 'counsel-expression-history)
-  (setq ivy-re-builders-alist '((t . ivy--regex-fuzzy))))
 
 (provide 'ged-ivy)
