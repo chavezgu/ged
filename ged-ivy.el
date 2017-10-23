@@ -24,6 +24,6 @@
   (global-set-key (kbd "C-c k") 'counsel-ag)
   (global-set-key (kbd "C-x l") 'counsel-locate)
   (global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
-  (define-key read-expression-map (kbd "C-r") 'counsel-expression-history)
+  (define-key read-expression-map (kbd "C-r") 'counsel-expression-history))
 
 (provide 'ged-ivy)
