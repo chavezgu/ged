@@ -60,6 +60,8 @@
 
 (use-package projectile
   :ensure t
-  :diminish projectile-mode)
+  :diminish projectile-mode
+  :config
+  (projectile-mode))
 
 (provide 'ged-dev)
