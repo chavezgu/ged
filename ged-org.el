@@ -31,4 +31,8 @@
      (setq org-map-continue-from (outline-previous-heading)))
    "/DONE" 'tree))
 
+
+;;; Babel languages
+(setq org-babel-load-languages '((emacs-lisp t) (js . t) (python . t)))
+
 (provide 'ged-org)
