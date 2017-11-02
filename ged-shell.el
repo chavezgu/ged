@@ -42,4 +42,15 @@
 
 (global-set-key (kbd "C-M-`") 'gcg-switch-to-shell)
 
+;;; Try to use eshell
+(require 'em-tramp)
+
+;;; Change the sudo
+(setq eshell-prefer-lisp-functions t)
+(setq eshell-prefer-lisp-variables t)
+
+(setq password-cache t)
+;;; Remember for 15 minutes.
+(setq password-cache-expiry 900)
+
 (provide 'ged-shell)
