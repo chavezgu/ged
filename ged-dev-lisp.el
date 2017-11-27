@@ -35,17 +35,4 @@
                      (local-set-key (kbd "C-c C-d d") 'ged-describe-elisp-at-point)
                      (local-set-key (kbd "C-c C-d C-d") 'ged-describe-elisp-at-point)))))
 
-;;; Scheme settings
-(setq geiser-active-implementations '(guile))
-
-(use-package geiser
-  :ensure t)
-
-;;; Common Lisp development settings
-(setq inferior-lisp-program "/usr/bin/sbcl")
-(setq slime-contribs '(slime-fancy slime-company))
-
-(use-package slime
-  :ensure t)
-
 (provide 'ged-dev-lisp)
