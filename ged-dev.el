@@ -37,12 +37,20 @@
 (use-package yaml-mode
   :ensure t)
 
-;;; Docker is the new hot stuff in town.
-;;; We use our own fork
+;; Docker is the new hot stuff in town.
+;; Own fork
 (use-package docker
   :load-path "~/projects/docker.el/"
+  ;; Since we user own fork, we have to download the dependencies first.
+  :init
+  (use-package tablist
+    :ensure t)
+  (use-package docker-tramp
+    :ensure t)
   :config
-  (setq docker-containers-show-all nil))
+  (progn
+    (require 'docker-containers)
+    (setq docker-containers-show-all nil)))
 
 ;;; Use flycheck
 (use-package flycheck
