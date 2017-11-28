@@ -38,9 +38,10 @@
   :ensure t)
 
 ;;; Docker is the new hot stuff in town.
+;;; We use our own fork
 (use-package docker
-  :ensure t
-  :init
+  :load-path "~/projects/docker.el/"
+  :config
   (setq docker-containers-show-all nil))
 
 ;;; Use flycheck
