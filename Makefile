@@ -1,2 +1,2 @@
 install:
-	cp -rf $(PWD) ~/.emacs.d/
+	rsync -avz $(PWD)/ ~/.emacs.d/ged/ --delete --exclude .git
