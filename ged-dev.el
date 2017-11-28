@@ -4,7 +4,9 @@
 (use-package magit
   :ensure t
   :bind
-  (("C-x g" . ged-check-magit)))
+  (("C-x g" . ged-check-magit))
+  :config
+  (setq-default magit-log-section-commit-count 0))
 
 ;;; Dont' check
 (defun ged-check-magit ()
