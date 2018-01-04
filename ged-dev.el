@@ -77,3 +77,4 @@
   (projectile-mode))
 
 (provide 'ged-dev)
+(diminish "autofill-mode")
