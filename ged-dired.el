@@ -15,11 +15,11 @@
 (add-to-list 'dired-guess-shell-alist-user '("\\.jpg\\'" "eog"))
 
 ;; Work apps
-(add-to-list 'dired-guess-shell-alist-user '("\\.xlsx\\'" "localc"))
-(add-to-list 'dired-guess-shell-alist-user '("\\.xls\\'" "localc"))
-(add-to-list 'dired-guess-shell-alist-user '("\\.ppt\\'" "loimpress"))
-(add-to-list 'dired-guess-shell-alist-user '("\\.pptx\\'" "loimpress"))
-(add-to-list 'dired-guess-shell-alist-user '("\\.docx\\'" "lowriter"))
-(add-to-list 'dired-guess-shell-alist-user '("\\.doc\\'" "lowriter"))
+(add-to-list 'dired-guess-shell-alist-user '("\\.xlsx\\'" "oocalc"))
+(add-to-list 'dired-guess-shell-alist-user '("\\.xls\\'" "oocalc"))
+(add-to-list 'dired-guess-shell-alist-user '("\\.ppt\\'" "ooimpress"))
+(add-to-list 'dired-guess-shell-alist-user '("\\.pptx\\'" "ooimpress"))
+(add-to-list 'dired-guess-shell-alist-user '("\\.docx\\'" "oowriter"))
+(add-to-list 'dired-guess-shell-alist-user '("\\.doc\\'" "oowriter"))
 
 (provide 'ged-dired)
