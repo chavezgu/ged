@@ -179,8 +179,4 @@
 (use-package pass
   :ensure t)
 
-;;; Use midnight commander-like abilities to copy from one dired buffer to the
-;;; next
-(setq-default dired-dwim-target t)
-
 (provide 'ged-core)

@@ -3,6 +3,10 @@
 (require 'dired-x)
 (setq dired-listing-switches "-alh")
 
+;;; Use midnight commander-like abilities to copy from one dired buffer to the
+;;; next
+(setq-default dired-dwim-target t)
+
 ;; Set the wanted files.
 (add-to-list 'dired-guess-shell-alist-user '("\\.pdf\\'" "mupdf"))
 (add-to-list 'dired-guess-shell-alist-user '("\\.azw3\\'" "ebook-viewer"))
