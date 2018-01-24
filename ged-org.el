@@ -46,6 +46,9 @@
              "~/org/links/feeds.org" "Armed and Dangerous")
             ("Coding Horror"
              "https://feeds.feedburner.com/codinghorror"
-             "~/org/links/feeds.org" "Coding Horror")))
+             "~/org/links/feeds.org" "Coding Horror")
+            ("Fedora Magazine"
+             "https://fedoramagazine.org/feed/"
+             "~/org/links/feeds.org" "Fedora Magazine")))
 
 (provide 'ged-org)
