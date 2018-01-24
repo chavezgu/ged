@@ -17,6 +17,7 @@
 (add-to-list 'dired-guess-shell-alist-user '("\\.png\\'" "eog"))
 (add-to-list 'dired-guess-shell-alist-user '("\\.gif\\'" "eog"))
 (add-to-list 'dired-guess-shell-alist-user '("\\.jpg\\'" "eog"))
+(add-to-list 'dired-guess-shell-alist-user '("\\.html\\'" "google-chrome"))
 
 ;; Work apps
 (add-to-list 'dired-guess-shell-alist-user '("\\.xlsx\\'" "oocalc"))
