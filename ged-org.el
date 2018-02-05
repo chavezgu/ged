@@ -36,19 +36,4 @@
 ;;; Babel languages
 (setq org-babel-load-languages '((emacs-lisp t) (js . t) (python . t)))
 
-;;; Blog feeds
-(setq org-feed-alist
-          '(("Irreal"
-              "http://irreal.org/blog/?feed=rss2"
-              "~/org/links/feeds.org" "Irreal")
-            ("Armed and Dangerous"
-             "http://esr.ibiblio.org/?feed=rss2"
-             "~/org/links/feeds.org" "Armed and Dangerous")
-            ("Coding Horror"
-             "https://feeds.feedburner.com/codinghorror"
-             "~/org/links/feeds.org" "Coding Horror")
-            ("Fedora Magazine"
-             "https://fedoramagazine.org/feed/"
-             "~/org/links/feeds.org" "Fedora Magazine")))
-
 (provide 'ged-org)
