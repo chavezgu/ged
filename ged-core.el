@@ -180,6 +180,7 @@
   :ensure t)
 
 (use-package elfeed
+  :ensure t
   :config
   (setq elfeed-feeds
         '(("http://nullprogram.com/feed/" emacs)
