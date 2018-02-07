@@ -179,16 +179,5 @@
 (use-package pass
   :ensure t)
 
-(use-package elfeed
-  :ensure t
-  :config
-  (setq elfeed-feeds
-        '(("http://nullprogram.com/feed/" emacs)
-          ("http://irreal.org/blog/?feed=rss2" emacs)
-          ("http://esr.ibiblio.org/?feed=rss2" geek)
-          ("https://feeds.feedburner.com/codinghorror" geek)
-          ("https://fedoramagazine.org/feed/" linux)
-          ("https://www.masteringemacs.org/feed" emacs)
-          )))
-
 (provide 'ged-core)
+
