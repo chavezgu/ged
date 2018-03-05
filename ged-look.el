@@ -29,4 +29,10 @@
       (ansi-color-apply-on-region compilation-filter-start (point-max))))
   (add-hook 'compilation-filter-hook 'my-colorize-compilation-buffer))
 
+;;; Install the powerline too.
+(use-package powerline
+  :ensure t
+  :config
+  (powerline-default-theme))
+
 (provide 'ged-look)
