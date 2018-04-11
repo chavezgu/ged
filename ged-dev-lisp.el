@@ -35,4 +35,9 @@
                      (local-set-key (kbd "C-c C-d d") 'ged-describe-elisp-at-point)
                      (local-set-key (kbd "C-c C-d C-d") 'ged-describe-elisp-at-point)))))
 
+;;; Set eval-buffer to C-c when in emacs-lisp-mode
+(add-hook 'emacs-lisp-mode-hook
+          (lambda ()
+            (local-set-key (kbd "C-c C-c") 'eval-buffer)))
+
 (provide 'ged-dev-lisp)
