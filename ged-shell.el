@@ -22,7 +22,7 @@
 (setq shell-file-name "/bin/bash")
 (setenv "SHELL" shell-file-name)
 ;;; less does not like Emacs so we don't like less
-(setenv "PAGER" "pager")
+(setenv "PAGER" "cat")
 
 (use-package shell-pop
   :ensure t
