@@ -44,7 +44,7 @@
 ;; Own fork
 (use-package docker
   :load-path "~/projects/docker.el/"
-  ;; Since we user own fork, we have to download the dependencies first.
+  ;; Since we use our own fork, we have to download the dependencies first.
   :init
   (use-package tablist
     :ensure t)
