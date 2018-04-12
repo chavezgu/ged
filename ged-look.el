@@ -1,11 +1,7 @@
 ;;; Look and feel and window management
 
-;; ;;; Let's go back to Monokai
-(use-package monokai-theme
-  :ensure t
-  :config
-  (load-theme 'monokai t))
-
+;; Let's go back to tango-dark.
+(load-theme 'tango-dark)
 
 ;;; No startup screen
 (setq-default inhibit-startup-screen t)
