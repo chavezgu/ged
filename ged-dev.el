@@ -29,6 +29,9 @@
   :init
   (yas-global-mode))
 
+(use-package yasnippet-snippets
+  :ensure t)
+
 ;;; Markdown for the people who don't know org-mode
 (use-package markdown-mode
   :ensure t)
