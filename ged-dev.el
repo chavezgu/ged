@@ -79,5 +79,10 @@
   :config
   (projectile-mode))
 
+(use-package ggtags
+  :ensure t
+  :config
+  (setq ggtags-enable-navigation-keys nil))
+
 (provide 'ged-dev)
 (diminish "autofill-mode")
