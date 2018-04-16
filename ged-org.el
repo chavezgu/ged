@@ -36,4 +36,7 @@
 ;;; Babel languages
 (setq org-babel-load-languages '((emacs-lisp t) (js . t) (python . t)))
 
+;;; Show all in every org file
+(setq org-startup-folded nil)
+
 (provide 'ged-org)
