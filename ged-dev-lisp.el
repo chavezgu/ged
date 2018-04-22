@@ -38,6 +38,7 @@
 ;;; Set eval-buffer to C-c when in emacs-lisp-mode
 (add-hook 'emacs-lisp-mode-hook
           (lambda ()
-            (local-set-key (kbd "C-c C-c") 'eval-buffer)))
+            (local-set-key (kbd "C-c C-c") 'eval-buffer)
+            (local-set-key (kbd "C-x C-e") 'pp-eval-last-sexp)))
 
 (provide 'ged-dev-lisp)
