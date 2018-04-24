@@ -63,7 +63,8 @@
   :config
   (progn
     (setq-default flycheck-disabled-checkers
-                  '(emacs-lisp-checkdoc json-jsonlint json-python-json))))
+                  '(emacs-lisp-checkdoc json-jsonlint json-python-json))
+    (setq-default flycheck-emacs-lisp-load-path 'inherit)))
 
 (use-package ag
   :ensure t)
