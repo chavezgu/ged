@@ -179,5 +179,11 @@
 (use-package pass
   :ensure t)
 
+;;; Use Avy
+(use-package avy
+  :ensure t
+  :config
+  (global-set-key (kbd "C-:") 'avy-goto-char-2))
+
 (provide 'ged-core)
 
