@@ -18,7 +18,7 @@
              '("gnu" . "http://elpa.gnu.org/packages/"))
 (package-initialize)
 
-(add-to-list 'load-path "~/.emacs.d/ged/")
+(add-to-list 'load-path "~/projects/ged/")
 
 ;;; Stolen from EOS
 (defvar ged-did-refresh-packages nil
