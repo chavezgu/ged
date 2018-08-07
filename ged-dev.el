@@ -52,8 +52,8 @@
     :ensure t)
   :config
   (progn
-    (require 'docker-containers)
-    (setq docker-containers-show-all nil)))
+    (require 'docker-container)
+    (setq docker-container-ls-arguments nil)))
 
 ;;; Use flycheck
 (use-package flycheck
