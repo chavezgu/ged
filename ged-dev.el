@@ -82,7 +82,8 @@
   ;; Apparently we need to reset this things.
   (global-set-key (kbd "C-c p c") 'projectile-compile-project)
   (global-set-key (kbd "C-c p u") 'projectile-run-project)
-  (global-set-key (kbd "C-c p s s") 'projectile-ag))
+  (global-set-key (kbd "C-c p s s") 'projectile-ag)
+  (setq projectile-project-run-cmd ""))
 
 (use-package ggtags
   :ensure t
