@@ -153,8 +153,10 @@
   (interactive)
   (when buffer-file-name
     (find-alternate-file
-     (concat "/sudo:root@localhost:"
-             buffer-file-name))))
+     (if (file-remote-p default-directory)
+         (with-parsed-tramp-file-name default-directory nil
+           (format "/%s:%s|sudo:root@%s:%s%s" method host host localname (buffer-name)))
+       (concat "/sudo:root@localhost:" buffer-file-name)))))
 
 (use-package tramp-sh
   :config
