@@ -187,5 +187,8 @@
   :config
   (global-set-key (kbd "C-:") 'avy-goto-char-2))
 
+;;; Don't ring a bell please
+(setq visible-bell 1)
+
 (provide 'ged-core)
 
