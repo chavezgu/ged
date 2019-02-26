@@ -83,7 +83,9 @@
   (global-set-key (kbd "C-c p c") 'projectile-compile-project)
   (global-set-key (kbd "C-c p u") 'projectile-run-project)
   (global-set-key (kbd "C-c p s s") 'projectile-ag)
-  (setq projectile-project-run-cmd ""))
+  (global-set-key (kbd "C-c p t t") 'projectile-test-project)
+  (setq projectile-project-run-cmd "")
+  (setq projectile-project-test-cmd ""))
 
 (use-package ggtags
   :ensure t
