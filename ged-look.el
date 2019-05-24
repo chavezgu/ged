@@ -17,6 +17,10 @@
 (when (fboundp 'scroll-bar-mode)
   (scroll-bar-mode -1))
 
+;;; Inconsolata is the best font
+(custom-set-faces
+ '(default ((t (:family "Inconsolata" :foundry "unknown" :slant normal :weight normal :height 120 :width normal)))))
+
 ;;; Colors in compilation mode!
 (ignore-errors
   (require 'ansi-color)
