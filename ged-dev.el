@@ -50,6 +50,9 @@
     :ensure t)
   (use-package docker-tramp
     :ensure t)
+  ;; We need the old magit-popup
+  (use-package magit-popup
+    :ensure t)
   :config
   (progn
     (require 'docker-container)
