@@ -88,7 +88,8 @@
   (global-set-key (kbd "C-c p s s") 'projectile-ag)
   (global-set-key (kbd "C-c p t t") 'projectile-test-project)
   (setq projectile-project-run-cmd "")
-  (setq projectile-project-test-cmd ""))
+  (setq projectile-project-test-cmd "")
+  (setq projectile-project-compilation-cmd ""))
 
 (use-package ggtags
   :ensure t
