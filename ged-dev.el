@@ -58,6 +58,9 @@
     (require 'docker-container)
     (setq docker-container-ls-arguments nil)))
 
+(use-package kubernetes
+  :ensure t)
+
 ;;; Use flycheck
 (use-package flycheck
   :ensure t
