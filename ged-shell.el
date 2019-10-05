@@ -34,11 +34,11 @@
 (progn
   (split-window-right)
   (other-window 1)
-  (shell "std"))
+  (shell "*shell std*"))
 
 (defun gcg-switch-to-shell ()
   (interactive)
-  (switch-to-buffer (get-buffer "std")))
+  (switch-to-buffer (get-buffer "*shell std*")))
 
 (global-set-key (kbd "C-M-`") 'gcg-switch-to-shell)
 
