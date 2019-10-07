@@ -34,20 +34,23 @@
 (progn
   (split-window-right)
   (other-window 1)
-  (shell "*shell std*"))
+  (with-current-buffer (eshell)
+    (rename-buffer "*eshell std*")))
 
 (defun gcg-switch-to-shell ()
   (interactive)
-  (switch-to-buffer (get-buffer "*shell std*")))
+  (switch-to-buffer (get-buffer "*eshell std*")))
 
 (global-set-key (kbd "C-M-`") 'gcg-switch-to-shell)
 
 ;;; Try to use eshell
 (require 'em-tramp)
 
-;;; Change the sudo
-(setq eshell-prefer-lisp-functions t)
+;;; Eshell settings
+(setq eshell-prefer-lisp-functions nil)
 (setq eshell-prefer-lisp-variables t)
+(setq eshell-prompt-function (function (lambda () "$ ")))
+(setq eshell-prompt-regexp "^$ ")
 
 (setq password-cache t)
 ;;; Remember for 15 minutes.
